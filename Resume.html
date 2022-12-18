@@ -1,0 +1,138 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESUME</title>
+    <style>
+    .container{
+    display:flex;
+    margin:5% auto;
+    width:60%;
+    }
+    img{
+    width: 90%;
+    height: 90%;
+    border-radius: 8em;
+
+
+}
+.first{
+    background-color:rgb(0, 0, 0);
+    padding: 2em;
+    color:rgb(255, 255, 255);
+    width:40%;
+
+}
+.second{
+    background-color:rgb(110, 100, 100, 0.276);
+    padding: 2em;
+    color:rgb(0, 0, 0);
+    
+    
+}
+.intro{
+    font-size: 4em;
+    padding: 0.8em;
+    margin:0px auto;
+    
+}
+h4,h2{
+    text-decoration: underline;
+}   
+</style>
+</head>
+<body>
+    <div>
+        Name:<input type="text" id="inputName"><br>
+        Phone Number: <input type="number" id="inputPhno"><br>
+        Email:<input type="text"id="inputemail"><br>
+        <button type="button" id="submit"  > Create Your Resume Now !!  </button>
+    </div>
+
+    <div class="container">
+        <div class="first">
+            <div class="image">
+                <img src="IMG_20211007_163934_659.jpg" alt="">
+            </div>
+            <div>
+                <h2>
+                    Objective :
+                </h2>
+                <p>
+                    To enhance my professional skills, capabilities and knowledge in an organization which recognizes the value of hard work and trusts me with responsibilities and challenges.
+                </p>
+            </div>
+            <div>
+                <h2>
+                    Contacts :
+                </h2>
+                phone No.:
+                <p id="phno">
+                     7817053886
+                </p>
+                    Email : 
+                    <p id="email">ayushisharma18899@gmail</p>
+                </p>
+            </div>
+            <div>
+                <h2>Skills</h2>
+                <h4>Languages : </h4>
+                <p>C, HTML, CSS, JavaScript.</p>
+            </div>
+            <div><h4>Hobbies</h4><p>Writing, Singing.</p></div>
+        </div>
+        <div class="second">
+            <div class="intro" id="name">
+                Ayushi Sharma
+            </div>
+            <div>
+                <h2>
+                    Education
+                </h2>
+                <h3>
+                    Shri Ram Group of Colleges
+                </h3>
+                <p>
+                   Pursuing(2019-2023)
+                   B.Tech Computer Science  
+                </p>
+                <h3>
+                    M.G. Public School
+                </h3>
+                <p>
+                   12th - CBSE - 2018
+                </p>
+                <p>
+                  10th - CBSE - 2016
+                </p>
+            </div>
+            <div>
+                <h2>
+                    Project
+                </h2>
+                <h4>Vechile Parking Management System</h4>
+                <p>In VPMS we use tikercad and c language.This project which keeps records of the vechile<br>
+                    which is going to park in the parking area and also show the availability of space in
+                     the parking area.</p>
+            
+            </div>
+        
+           
+        </div>
+    </div>
+    <script>
+         let btn = document.getElementById("submit");
+        btn.addEventListener("click",function submitButtonClickHandler(e){
+            let name = document.getElementById("inputName").value;
+            let phno = document.getElementById("inputPhno").value;
+            let email=document.getElementById("inputemail").value;
+            document.getElementById("name").innerHTML =name;
+            document.getElementById("phno").innerHTML =phno;
+            document.getElementById("email").innerHTML=email;
+        }) 
+    </script>
+    
+</body>
+</html>
